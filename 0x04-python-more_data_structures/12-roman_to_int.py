@@ -6,9 +6,7 @@ def roman_to_int(roman_string):
     rome = 0
     prev_value = 0
 
-    if roman_string is None:
-        return 0
-    if roman_string[0] >= '0' and roman_string[0] <= '9':
+    if isinstance(roman_string, int) or roman_string is None:
         return 0
 
     for char in roman_string:
