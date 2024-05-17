@@ -13,10 +13,10 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by 0")
         except TypeError:
             lt.append(0)
-            print("Wrong type")
+            print("wrong type")
         except IndexError:
             lt.append(0)
-            print("Out of range")
+            print("out of range")
         finally:
             pass
     return lt
