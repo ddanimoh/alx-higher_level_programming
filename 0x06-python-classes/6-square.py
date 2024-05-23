@@ -2,7 +2,6 @@
 
 """
 A defination of Square class
-
 """
 
 
@@ -51,6 +50,9 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = value
 
+    """
+    print defination
+    """
     def my_print(self):
         if self.__size == 0:
             print()
@@ -61,10 +63,16 @@ class Square:
             [print("#", end="") for k in range(0, self.__size)]
             print("")
 
+    """
+    Position property
+    """
     @property
     def position(self):
         return self.__position
 
+    """
+    position setter
+    """
     @position.setter
     def position(self, value):
         if not (isinstance(value[0], int) and isinstance(value[1], int)):
