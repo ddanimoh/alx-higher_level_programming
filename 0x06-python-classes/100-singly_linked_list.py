@@ -4,6 +4,7 @@
 A python class Node to define single linked list
 """
 
+
 class Node:
     """
     A class Node, starter node
@@ -32,6 +33,7 @@ class Node:
         if value is not None and not isinstance(value, Node):
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
+
 
 class SinglyLinkedList:
     def __init__(self):
