@@ -6,6 +6,11 @@ A square class with private instance with Method
 
 
 class Square:
+
+    '''
+    A class with a private attribute size
+    With instantiation of 0, with Error check condition
+    '''
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
