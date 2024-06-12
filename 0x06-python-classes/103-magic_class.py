@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import math
 
 '''
 comment stay here for model
 '''
+import math
 
 
 class MagicClass:
