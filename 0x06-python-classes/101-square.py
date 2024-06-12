@@ -53,7 +53,7 @@ class Square:
     def __str__(self):
         result = ""
         if self._size == 0:
-            return "\n"
+            return
 
         result += "\n" * self._position[1]
         for i in range(self._size):
