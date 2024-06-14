@@ -28,8 +28,8 @@ If one argument is supply the other automaticly become 98
     >>> add_integer(1, 'b')
     Traceback (most recent call last):
         ...
-    TypeError: a and b must be integers or floats
+    TypeError: b must be an integer
     >>> add_integer('a', 2)
     Traceback (most recent call last):
         ...
-    TypeError: a and b must be integers or floats
+    TypeError: a must be an integer
