@@ -3,13 +3,16 @@
 add_integer function adds two integers or floats
 and returns the result as an integer.
 
-The add_integer function takes two arguments, with the second one being optional.
+The add_integer function takes two arguments,
+with the second one being optional.
 
 The result or output is always going to be an integer
 even if float numbers are added.
 """
+
+
 def add_integer(a, b=98):
-    
+
     """
     Adds two integers or floats and returns the result as an integer.
 
@@ -24,7 +27,9 @@ def add_integer(a, b=98):
         TypeError: If either a or b is not an integer or float.
     """
 
-    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
-        raise TypeError("a and b must be integers or floats")
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be integers or floats")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be integers or floats")
 
     return int(a) + int(b)
