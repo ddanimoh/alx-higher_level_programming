@@ -7,6 +7,8 @@ It take two arguments but one can be supply.
 If one argument is supply the other automaticly become 98
 
 ::
+
+    >>> add_integer = __import__('0-add_integer').add_integer
     >>> add_integer(1, 2)
     3
     >>> add_integer(100, -2)
