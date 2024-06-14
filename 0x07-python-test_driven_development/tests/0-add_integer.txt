@@ -1,35 +1,25 @@
-==========================
-== add_integer function ==
-==========================
-
-`add_integer` add int or float numbers.
-It take two arguments but one can be supply.
-If one argument is supply the other automaticly become 98
-
-::
-
-    >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(1, 2)
-    3
-    >>> add_integer(100, -2)
-    98
-    >>> add_integer(1.5, 2.3)
-    3
-    >>> add_integer(7.9, -2.5)
-    5
-    >>> add_integer(10)
-    108
-    >>> add_integer(0)
-    98
-    >>> add_integer(-3)
-    95
-    >>> add_integer(2.3, 4.7)
-    6
-    >>> add_integer(1, 'b')
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
-    >>> add_integer('a', 2)
-    Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(1, 2)
+3
+>>> add_integer(100, -2)
+98
+>>> add_integer(1.5, 2.3)
+3
+>>> add_integer(7.9, -2.5)
+5
+>>> add_integer(10)
+108
+>>> add_integer(0)
+98
+>>> add_integer(-3)
+95
+>>> add_integer(2.3, 4.7)
+6
+>>> add_integer(1, 'b')
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+>>> add_integer('a', 2)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
