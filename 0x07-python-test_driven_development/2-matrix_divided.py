@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-'''
+"""
 A function that divides all elements of a matrix.
 It must be list of list and each row must contain int or float type
-'''
+"""
 
 
 def matrix_divided(matrix, div):
 
-    '''
+    """
     Check if matrix is a list of lists of integers or floats
     Check if all elements in the matrix are integers or floats
     Check if all rows are of the same size
@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     Check if div is zero
     THEN
     Perform the division and return a new matrix
-    '''
+    """
 
     if not isinstance(matrix, list) or not all(
             isinstance(row, list) for row in matrix):
