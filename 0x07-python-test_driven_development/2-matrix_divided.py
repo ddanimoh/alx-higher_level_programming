@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 This module provides a function to divide
 all elements of a matrix by a given number.
@@ -11,6 +12,7 @@ The function ensures that:
 
 
 def matrix_divided(matrix, div):
+
     """
     Divides all elements of a matrix by a given divisor and
     returns a new matrix with the results.
@@ -31,6 +33,7 @@ def matrix_divided(matrix, div):
         list of list of float: A new matrix with all elements
         divided by the divisor, rounded to 2 decimal places.
     """
+
     if not isinstance(matrix, list) or not all(
                       isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix
