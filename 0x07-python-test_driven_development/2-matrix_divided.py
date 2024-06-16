@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a function to divide all elements of a matrix by a given number.
+This module provides a func to div all elements of a matrix by given num.
 
 The function ensures that:
 - The matrix is a list of lists of integers or floats.
@@ -8,13 +8,17 @@ The function ensures that:
 - The divisor is a number (integer or float) and is not zero.
 """
 
+
 def matrix_divided(matrix, div):
     """
-    Divides all elements of a matrix by a given divisor and returns a new matrix with the results.
+    Divides all elements of a matrix by a given divisor and returns
+    a new matrix with the results.
 
     Args:
-        matrix (list of list of int/float): A matrix to be divided, where each row must contain int or float types.
-        div (int/float): The number by which to divide each element of the matrix.
+        matrix (list of list of int/float): A matrix to be divided
+        where each row must contain int or float types.
+        div (int/float): The number by which to divide
+        each element of the matrix.
 
     Raises:
         TypeError: If the matrix is not a list of lists of integers or floats.
@@ -24,14 +28,17 @@ def matrix_divided(matrix, div):
         ZeroDivisionError: If the divisor is zero.
 
     Returns:
-        list of list of float: A new matrix with all elements divided by the divisor, rounded to 2 decimal places.
+        list of list of float: A new matrix with all elements
+        divided by the divisor, rounded to 2 decimal places.
     """
-    if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
-    
+    if not isinstance(matrix, list) or not
+    all(isinstance(row, list) for row in matrix):
+        raise TypeError("matrix must be a matrix
+                        (list of lists) of integers/floats")
+
     for row in matrix:
         if not all(isinstance(element, (int, float)) for element in row):
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError("matrix must be (list of lists) of int/float")
 
     row_length = len(matrix[0])
     if not all(len(row) == row_length for row in matrix):
