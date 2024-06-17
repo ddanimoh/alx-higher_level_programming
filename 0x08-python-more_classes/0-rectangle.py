@@ -6,4 +6,7 @@ Define  class REctangle
 
 
 class Rectangle:
+    """
+    Class Rec
+    """
     pass
