@@ -114,14 +114,13 @@ class Rectangle:
 
         return rect_str.strip()
 
-     def __repr__(self):
+    def __repr__(self):
+        """
+        Returns a string representation of the rectangle to recreate
+        a new instance using eval().
 
-         """
-         Returns a string representation of the rectangle to recreate
-         a new instance using eval().
-
-         Returns:
-             str: A string representation of the rectangle.
-         """
+        Returns:
+            str: A string representation of the rectangle.
+        """
 
         return f"Rectangle({self.__width}, {self.__height})"
